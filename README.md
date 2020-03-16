@@ -1,2 +1,2 @@
-# swan
-🦢personal site v3
+# Swan
+personal site v3
