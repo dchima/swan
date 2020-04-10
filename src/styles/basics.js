@@ -22,13 +22,15 @@ const basics = {
     deepBlue: '#010D4E',
     rose: '#AA405B',
     pink: '#DBA3B1',
+    paper: '#FAFAC8',
   },
   transition: 'all 0.25s cubic-bezier(0.3, 0.3, 0.3, 0.3)',
   fonts: {
     Monoton: 'Monoton, Roboto Mono, Lucida Console, Monaco, monospace',
     NotoSans: 'Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial, sans-serif',
     LilitaOne: 'Lilita One, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial ',
-    BalooBhaina: 'Baloo Bhaina, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI',
+    MadeSoulmazeBrush: 'Made Soulmaze Brush, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI',
+    BeVietnam: 'Be Vietnam, Lilita One, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial',
   },
   fontSize: {
     large: '50px',

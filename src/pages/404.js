@@ -19,7 +19,8 @@ const BodyText = styled.p`
   font-weight: 800;
   font-size: 100px;
   line-height: 80px;
-  color: ${Basics.colors.laserBlue};
+  font-family: ${Basics.fonts.MadeSoulmazeBrush};
+  color: ${Basics.colors.black};
 `;
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
       </Helmet>
       <GlobalStyle />
       <BodyText>
-        404 <br /> Page not found.
+        404
       </BodyText>
       <Nav />
     </PageContainer>

@@ -21,7 +21,7 @@ const App = () => (
   <AppContainer>
   <Helmet>
     <meta charSet="utf-8" />
-    <title>Home</title>
+    <title>Daniel Chima</title>
   </Helmet>
     <GlobalStyle />
     <Nav />

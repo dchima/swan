@@ -40,6 +40,34 @@ const GlobalStyle = createGlobalStyle`
     font-display: auto;
   }
   @font-face {
+    font-family: 'Be Vietnam';
+    src: url(${Fonts.BeVietnamBoldTTF}) format ('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Be Vietnam';
+    src: url(${Fonts.BeVietnamBoldItalicTFF}) format ('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Be Vietnam';
+    src: url(${Fonts.BeVietnamItalicTTF}) format ('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Be Vietnam';
+    src: url(${Fonts.BeVietnamRegularTTF}) format ('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
     font-family: 'Lilita One';
     src: url(${Fonts.LilitaOneRegularTTF}) format ('truetype');
     font-weight: normal;
@@ -47,8 +75,8 @@ const GlobalStyle = createGlobalStyle`
     font-display: auto;
   }
   @font-face {
-    font-family: 'Baloo Bhaina';
-    src: url(${Fonts.BalooBhainaRegullarTTF}) format ('truetype');
+    font-family: 'Made Soulmaze Brush';
+    src: url(${Fonts.MadeSoulmazeBrushOTF}) format ('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
@@ -61,7 +89,7 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #ffffff;
+    background-color: ${Basics.colors.paper};
   }
 
   code {
