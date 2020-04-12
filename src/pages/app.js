@@ -1,7 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle, Screen } from 'styles';
+
+import { lightTheme, darkTheme } from 'utils/theme';
+import { DarkMode } from 'utils';
 import {
   Nav,
 } from 'components';
@@ -17,15 +20,25 @@ const AppContainer = styled.div`
 `};
 `;
 
-const App = () => (
-  <AppContainer>
-  <Helmet>
-    <meta charSet="utf-8" />
-    <title>Daniel Chima</title>
-  </Helmet>
-    <GlobalStyle />
-    <Nav />
-  </AppContainer>
-);
+const App = () => {
+  const [theme, toggleTheme, componentMounted] = DarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  if (!componentMounted) {
+    return <div />;
+  }
+
+  return (
+      <AppContainer>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Home</title>
+        </Helmet>
+        <ThemeProvider theme={themeMode}>
+          <GlobalStyle />
+          <Nav theme={theme} toggleTheme={toggleTheme}/>
+        </ThemeProvider>
+      </AppContainer>
+  );
+};
 
 export default App;
