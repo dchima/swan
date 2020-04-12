@@ -114,10 +114,15 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${({ theme }) => theme.body};
-    font-family: ${Basics.fonts.MadeSoulmazeBrush};
+    font-family: ${Basics.fonts.BeVietnam};
 
   }
   
+  h1 {
+    font-family: ${Basics.fonts.MadeSoulmazeBrush};
+    color: ${({ theme }) => theme.color};
+
+  }
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

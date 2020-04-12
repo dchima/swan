@@ -10,12 +10,16 @@ const BrightnessContainer = styled.button`
   border: none;
   background-color: transparent;
   outline: none;
-  margin-top: -20px;
+  margin-top: 30px;
   right: 150px;
   svg {
     fill: ${({ theme }) => theme.button};
     width: 30px;
     height: 30px;
+    ${Screen.miniTablet`
+      width: 25px;
+      height: 25px;
+    `};
   }
   ${Screen.tablet`
     right: 50px;

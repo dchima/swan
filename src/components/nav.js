@@ -7,11 +7,11 @@ import { Logo } from 'components/svg';
 
 const NavContainer = styled.div`
   position: fixed;
-  height: 12vh;
+  height: 10vh;
   bottom: 0;
   left: 0;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.body};
   width: 100%;
   ${Screen.largePhone`
     height: 80px;
@@ -20,12 +20,16 @@ const NavContainer = styled.div`
 
 const LogoContainer = styled.div`
   position: fixed;
-  margin-top: -20px;
+  margin-top: 30px;
   margin-left: 150px;
   svg {
     fill: ${({ theme }) => theme.logo};
     width: 30px;
     height: 30px;
+    ${Screen.miniTablet`
+      width: 25px;
+      height: 25px;
+    `};
   }
   ${Screen.tablet`
     margin-left: 80px;
