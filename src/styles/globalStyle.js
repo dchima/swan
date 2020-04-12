@@ -89,6 +89,16 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${({ theme }) => theme.body};
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
   }
 
   code {
