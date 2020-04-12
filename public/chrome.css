@@ -6,7 +6,7 @@ body {
   -webkit-animation-timing-function: linear;
  }
  
- @@-webkit-keyframes fontfix {
+ @-webkit-keyframes fontfix {
   from { opacity: 1; }
   to   { opacity: 1; }
  }

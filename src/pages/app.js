@@ -1,10 +1,7 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle, Screen } from 'styles';
-
-import { lightTheme, darkTheme } from 'utils/theme';
-import { DarkMode } from 'utils';
 import {
   Nav,
 } from 'components';
