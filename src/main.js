@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { lightTheme, darkTheme } from 'utils/theme';
 import { DarkMode } from 'utils';
@@ -8,6 +8,10 @@ import {
   ErrorPage,
 } from 'pages';
 
+const Hide = styled.div`
+  font-family: 'Made Soulmaze Brush';
+  display: hidden;
+`;
 const Main = () => {
   const [theme, toggleTheme, componentMounted] = DarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -16,6 +20,7 @@ const Main = () => {
   }
   return (
       <ThemeProvider theme={themeMode}>
+        <Hide />
         <Switch>
           <Route exact path='/' render={() => <App theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/404' render={() => <ErrorPage theme={theme} toggleTheme={toggleTheme}/>} />

@@ -4,6 +4,17 @@ import Screen from './screen';
 import * as Fonts from './fonts';
 
 const GlobalStyle = createGlobalStyle`
+
+  @font-face {
+    font-family: 'Made Soulmaze Brush';
+    src: url(${Fonts.MadeSoulmazeBrushRegularWOFF2}) format ('woff2'),
+    url(${Fonts.MadeSoulmazeBrushRegularWOFF}) format ('woff'),
+    url(${Fonts.MadeSoulmazeBrushRegularTTF}) format ('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+  }
+
   @font-face {
     font-family: 'Monoton';
     src: url(${Fonts.MonotonRegularTTF}) format('truetype');
@@ -70,15 +81,6 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Lilita One';
     src: url(${Fonts.LilitaOneRegularTTF}) format ('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Made Soulmaze Brush';
-    src:  url(${Fonts.MadeSoulmazeBrushRegularWOFF2}) format ('woff2'),
-          url(${Fonts.MadeSoulmazeBrushRegularWOFF}) format ('woff'),
-          url(${Fonts.MadeSoulmazeBrushRegularTTF}) format ('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
