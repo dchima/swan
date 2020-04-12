@@ -29,7 +29,7 @@ const basics = {
     Monoton: 'Monoton, Roboto Mono, Lucida Console, Monaco, monospace',
     NotoSans: 'Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial, sans-serif',
     LilitaOne: 'Lilita One, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial ',
-    MadeSoulmazeBrush: 'Made Soulmaze Brush, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI',
+    MadeSoulmazeBrush: 'Made Soulmaze Brush',
     BeVietnam: 'Be Vietnam, Lilita One, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial',
   },
   fontSize: {

@@ -106,14 +106,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     background-color: ${({ theme }) => theme.body};
     font-family: ${Basics.fonts.MadeSoulmazeBrush};
-    font-size: ${Basics.fontSize.xlarge};
 
-    &.hidden {
-      overflow: hidden;
-    }
-    &.blur {
-      overflow: hidden;
-    }
   }
   
 
