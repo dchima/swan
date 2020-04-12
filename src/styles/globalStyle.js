@@ -7,9 +7,9 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Made Soulmaze Brush';
-    src: url(${Fonts.MadeSoulmazeBrushRegularWOFF2}) format ('woff2'),
-    url(${Fonts.MadeSoulmazeBrushRegularWOFF}) format ('woff'),
-    url(${Fonts.MadeSoulmazeBrushRegularTTF}) format ('truetype');
+    src: url(${Fonts.MadeSoulmazeBrushRegularWOFF2}) format('woff2'),
+    url(${Fonts.MadeSoulmazeBrushRegularWOFF}) format('woff'),
+    url(${Fonts.MadeSoulmazeBrushRegularTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
@@ -24,63 +24,72 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: 'Noto Sans';
-    src: url(${Fonts.NotoSansBoldTTF}) format ('truetype');
+    src: url(${Fonts.NotoSansBoldTTF}) format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: auto;
   }
   @font-face {
     font-family: 'Noto Sans';
-    src: url(${Fonts.NotoSansBoldItalicTFF}) format ('truetype');
+    src: url(${Fonts.NotoSansBoldItalicTFF}) format('truetype');
     font-weight: 900;
     font-style: italic;
     font-display: auto;
   }
   @font-face {
     font-family: 'Noto Sans';
-    src: url(${Fonts.NotoSansItalicTTF}) format ('truetype');
+    src: url(${Fonts.NotoSansItalicTTF}) format('truetype');
     font-weight: 300;
     font-style: italic;
     font-display: auto;
   }
   @font-face {
     font-family: 'Noto Sans';
-    src: url(${Fonts.NotoSansRegularTTF}) format ('truetype');
+    src: url(${Fonts.NotoSansRegularTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
   }
   @font-face {
     font-family: 'Be Vietnam';
-    src: url(${Fonts.BeVietnamBoldTTF}) format ('truetype');
+    src: url(${Fonts.BeVietnamBoldWOFF2}) format('woff2'),
+    url(${Fonts.BeVietnamBoldWOFF}) format('woff'),
+    url(${Fonts.BeVietnamBoldTTF}) format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: auto;
   }
   @font-face {
     font-family: 'Be Vietnam';
-    src: url(${Fonts.BeVietnamBoldItalicTFF}) format ('truetype');
+    src: url(${Fonts.BeVietnamBoldItalicWOFF2}) format('woff2'),
+    url(${Fonts.BeVietnamBoldItalicWOFF}) format('woff'),
+    url(${Fonts.BeVietnamBoldItalicTFF}) format('truetype');
     font-weight: 900;
     font-style: italic;
     font-display: auto;
   }
   @font-face {
     font-family: 'Be Vietnam';
-    src: url(${Fonts.BeVietnamItalicTTF}) format ('truetype');
+    src: url(${Fonts.BeVietnamItalicWOFF2}) format('woff2')
+    url(${Fonts.BeVietnamItalicWOFF}) format('woff'),
+    url(${Fonts.BeVietnamItalicTTF}) format('truetype');
     font-weight: 300;
     font-style: italic;
     font-display: auto;
   }
   @font-face {
     font-family: 'Be Vietnam';
-    src: url(${Fonts.BeVietnamRegularTTF}) format ('truetype');
+    src: 
+    url(${Fonts.BeVietnamRegularWOFF2}) format('woff2'),
+    url(${Fonts.BeVietnamRegularWOFF}) format('woff'),
+    url(${Fonts.BeVietnamRegularTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: auto;
   }
   @font-face {
     font-family: 'Lilita One';
-    src: url(${Fonts.LilitaOneRegularTTF}) format ('truetype');
+    src: url(${Fonts.LilitaOneRegularTTF}) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: auto;

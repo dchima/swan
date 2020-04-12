@@ -16,7 +16,7 @@ const PageContainer = styled.div`
 const BodyText = styled.h1`
   margin-top: 300px;
   text-align: center;
-  font-family: ${Basics.fonts.MadeSoulmazeBrush};
+  font-family: ${Basics.fonts.BeVietnam};
   font-weight: 800;
   font-size: 100px;
   line-height: 80px;
@@ -32,7 +32,7 @@ const App = ({ theme, toggleTheme }) => (
       </Helmet>
       <GlobalStyle />
       <BodyText>
-        404
+        404 <br /> page not found
       </BodyText>
       <Nav theme={theme} toggleTheme={toggleTheme}/>
     </PageContainer>
