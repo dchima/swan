@@ -13,13 +13,14 @@ const PageContainer = styled.div`
   color: white;
 `;
 
-const BodyText = styled.p`
+const BodyText = styled.h1`
   margin-top: 300px;
   text-align: center;
+  font-family: ${Basics.fonts.MadeSoulmazeBrush};
   font-weight: 800;
   font-size: 100px;
   line-height: 80px;
-  font-family: ${Basics.fonts.MadeSoulmazeBrush};
+
   color: ${Basics.colors.black};
 `;
 

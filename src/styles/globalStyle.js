@@ -86,22 +86,36 @@ const GlobalStyle = createGlobalStyle`
     font-display: auto;
   }
 
+  html {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
   body {
     margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${({ theme }) => theme.body};
-    -webkit-animation-delay: 0.1s;
-    -webkit-animation-name: fontfix;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-  }
+    font-family: ${Basics.fonts.MadeSoulmazeBrush};
+    font-size: ${Basics.fontSize.xlarge};
 
-  @-webkit-keyframes fontfix {
-    from { opacity: 1; }
-    to   { opacity: 1; }
+    &.hidden {
+      overflow: hidden;
+    }
+    &.blur {
+      overflow: hidden;
+    }
   }
+  
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -125,8 +139,8 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-size: 13px;
-    font-family: ${Basics.fonts.NotoSans};
-    color: ${Basics.colors.chalkBlue};
+    font-family: ${Basics.fonts.BeVietnam};
+    color: ${Basics.colors.black};
     font-weight: 900;
     word-spacing: 2px;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Basics, Screen } from 'styles';
+import { Screen } from 'styles';
 import { Toggle } from 'utils';
 import { Logo } from 'components/svg';
 
@@ -42,7 +42,7 @@ const Nav = ({ theme, toggleTheme }) => (
           <Logo />
         </Link>
       </LogoContainer>
-         <Toggle theme={theme} toggleTheme={toggleTheme} />
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
     </NavContainer>
 );
 
