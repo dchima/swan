@@ -9,6 +9,7 @@ import BeVietnamItalicTTF from 'fonts/BeVietnam/BeVietnam-Italic.ttf';
 import BeVietnamRegularTTF from 'fonts/BeVietnam/BeVietnam-Regular.ttf';
 import LilitaOneRegularTTF from 'fonts/LilitaOne/LilitaOne-Regular.ttf';
 import MadeSoulmazeBrushOTF from 'fonts/MadeSoulmazeBrush/MadeSoulmazeBrush-Regular.otf';
+import MadeSoulmazeBrushWOFF from 'fonts/MadeSoulmazeBrush/MadeSoulmazeBrush-Regular.woff';
 
 export {
   MonotonRegularTTF,
@@ -22,4 +23,5 @@ export {
   BeVietnamRegularTTF,
   LilitaOneRegularTTF,
   MadeSoulmazeBrushOTF,
+  MadeSoulmazeBrushWOFF,
 };

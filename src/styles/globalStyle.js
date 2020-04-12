@@ -76,7 +76,9 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: 'Made Soulmaze Brush';
-    src: url(${Fonts.MadeSoulmazeBrushOTF}) format ('opentype');
+    src:  url(${Fonts.MadeSoulmazeBrushOTF}) format ('opentype'),
+          url(${Fonts.MadeSoulmazeBrushWOFF}) format ('woff');
+    
     font-weight: normal;
     font-style: normal;
     font-display: auto;
