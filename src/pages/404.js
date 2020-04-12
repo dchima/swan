@@ -16,7 +16,7 @@ const PageContainer = styled.div`
 const BodyText = styled.h1`
   margin-top: 300px;
   text-align: center;
-  font-family: ${Basics.fonts.BeVietnam};
+  font-family: ${Basics.fonts.MadeSoulmazeBrush};
   font-weight: 800;
   font-size: 100px;
   line-height: 80px;
