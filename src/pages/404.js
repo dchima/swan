@@ -11,26 +11,32 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
 `;
 
 const SwanContainer = styled.div`
-  margin-top: 150px;
+  margin-top: 300px;
   svg {
     fill: ${({ theme }) => theme.logo};
-    width: 400px;
-    height: 400px;
+    width: 290px;
+    height: 290px;
     ${Screen.miniTablet`
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
     `};
   }
+  ${Screen.largePhone`
+    margin-top: 250px;
+  `};
+  ${Screen.smallPhone`
+    margin-top: 100px;
+  `};
 `;
 
 const BodyText = styled.h1`
+  margin-top: -30px;
   text-align: center;
   font-weight: 800;
-  font-size: 100px;
+  font-size: 40px;
   line-height: 80px;
   ${Screen.miniTablet`
     font-size: ${Basics.fontSize.large};
