@@ -22,8 +22,8 @@ const BodyText = styled.p`
   font-family: ${Basics.fonts.MadeSoulmazeBrush};
   color: ${Basics.colors.black};
 `;
-function App() {
-  return (
+
+const App = ({ theme, toggleTheme }) => (
     <PageContainer>
       <Helmet>
         <meta charSet="utf-8" />
@@ -33,10 +33,8 @@ function App() {
       <BodyText>
         404
       </BodyText>
-      <Nav />
+      <Nav theme={theme} toggleTheme={toggleTheme}/>
     </PageContainer>
-
-  );
-}
+);
 
 export default App;

@@ -25,14 +25,11 @@ const BrightnessContainer = styled.button`
   `};
 `;
 
-const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === 'light';
-  return (
+const Toggle = ({ toggleTheme }) => (
     <BrightnessContainer onClick={toggleTheme} >
       <Brightness />
     </BrightnessContainer>
-  );
-};
+);
 
 Toggle.propTypes = {
   theme: string.isRequired,

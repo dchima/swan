@@ -20,25 +20,15 @@ const AppContainer = styled.div`
 `};
 `;
 
-const App = () => {
-  const [theme, toggleTheme, componentMounted] = DarkMode();
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
-  if (!componentMounted) {
-    return <div />;
-  }
-
-  return (
+const App = ({ theme, toggleTheme }) => (
       <AppContainer>
         <Helmet>
           <meta charSet="utf-8" />
           <title>Home</title>
         </Helmet>
-        <ThemeProvider theme={themeMode}>
-          <GlobalStyle />
-          <Nav theme={theme} toggleTheme={toggleTheme}/>
-        </ThemeProvider>
+        <GlobalStyle />
+        <Nav theme={theme} toggleTheme={toggleTheme}/>
       </AppContainer>
-  );
-};
+);
 
 export default App;
