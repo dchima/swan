@@ -32,7 +32,7 @@ const SwanContainer = styled.div`
   `};
 `;
 
-const BodyText = styled.h1`
+const BodyText = styled.h2`
   margin-top: -30px;
   text-align: center;
   font-weight: 800;
@@ -41,6 +41,8 @@ const BodyText = styled.h1`
   ${Screen.miniTablet`
     font-size: ${Basics.fontSize.large};
   `};
+  font-family: ${Basics.fonts.MadeSoulmazeBrush};
+  color: ${({ theme }) => theme.logo};
 `;
 
 const App = ({ theme, toggleTheme }) => (

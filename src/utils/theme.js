@@ -12,10 +12,10 @@ export const lightTheme = {
 
 export const darkTheme = {
   body: Basics.colors.black,
-  logo: Basics.colors.white,
+  logo: Basics.colors.wood,
   subtitle: Basics.colors.wood,
   color: Basics.colors.white,
   link: Basics.colors.wood,
   text: '#FAFAFA',
-  button: Basics.colors.white,
+  button: Basics.colors.wood,
 };
