@@ -4,9 +4,8 @@ const Swan = () => (
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
    width="858.000000pt" height="720.000000pt" viewBox="0 0 858.000000 720.000000"
    preserveAspectRatio="xMidYMid meet">
-  
   <g transform="translate(0.000000,720.000000) scale(0.100000,-0.100000)"
-  fill="#000000" stroke="none">
+  stroke="none">
   <path d="M7239 7194 c-1 -5 -1 -12 -1 -15 1 -3 -37 -9 -84 -12 -60 -4 -93 -12
   -112 -25 -15 -11 -38 -23 -52 -27 -36 -11 -200 -94 -200 -101 0 -4 9 -4 20 -1
   30 8 24 0 -22 -29 -38 -24 -258 -235 -258 -247 0 -3 10 -2 22 1 17 4 5 -14

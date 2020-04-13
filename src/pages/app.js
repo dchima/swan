@@ -4,13 +4,14 @@ import { Helmet } from 'react-helmet';
 import { GlobalStyle, Screen } from 'styles';
 import {
   Nav,
+  Hero,
 } from 'components';
 
 const AppContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 200px 180px 30px 200px;
+  margin: 100px 180px 30px 200px;
   ${Screen.largePhone`
   margin-left: 10px;
   margin-right: 10px;
@@ -24,6 +25,7 @@ const App = ({ theme, toggleTheme }) => (
           <title>Home</title>
         </Helmet>
         <GlobalStyle />
+        <Hero />
         <Nav theme={theme} toggleTheme={toggleTheme}/>
       </AppContainer>
 );

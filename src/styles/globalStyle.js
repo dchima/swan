@@ -121,7 +121,12 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: ${Basics.fonts.MadeSoulmazeBrush};
     color: ${({ theme }) => theme.color};
+  }
 
+  h2 {
+    font-family: ${Basics.fonts.BeVietnam};
+    font-weight: 600;
+    color: ${({ theme }) => theme.subtitle};
   }
 
   code {
@@ -130,27 +135,31 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: ${Basics.colors.deepBlue};
+    display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
+    color: ${({ theme }) => theme.link};
     position: relative;
     transition: ${Basics.transition};
     cursor: pointer;
 
     &:hover,
     &:focus {
-      color: ${Basics.colors.neonBlue};
+      color: ${({ theme }) => theme.link};
       outline: 0;
+      &:after {
+        width: 100%;
+      }
     }
+
   }
 
   p {
     font-size: 13px;
     font-family: ${Basics.fonts.BeVietnam};
-    color: ${Basics.colors.black};
+    color: ${({ theme }) => theme.color};
     font-weight: 900;
     word-spacing: 2px;
-
   }
 
   ol { 
