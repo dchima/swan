@@ -1,11 +1,11 @@
 import { Basics } from 'styles';
 
 export const lightTheme = {
-  body: Basics.colors.paper,
+  body: Basics.colors.creamWhite,
   logo: Basics.colors.black,
-  subtitle: Basics.colors.black,
+  subtitle: Basics.colors.wood,
   color: Basics.colors.black,
-  link: Basics.colors.neonBlue,
+  link: Basics.colors.wood,
   text: '#363537',
   button: Basics.colors.black,
 };
@@ -13,9 +13,9 @@ export const lightTheme = {
 export const darkTheme = {
   body: Basics.colors.black,
   logo: Basics.colors.white,
-  subtitle: Basics.colors.fadedRed,
+  subtitle: Basics.colors.wood,
   color: Basics.colors.white,
-  link: Basics.colors.fadedRed,
+  link: Basics.colors.wood,
   text: '#FAFAFA',
   button: Basics.colors.white,
 };

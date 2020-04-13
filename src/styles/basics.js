@@ -10,6 +10,7 @@ const basics = {
     neonBlue: '#002FAD',
     fadedBlue: '#9EADD5',
     chalkBlue: '#727884',
+    soapBlue: '#425bc2',
     washBlue: '#EDFCFF',
     solidGreen: '#247013',
     washGreen: '#dcffd4',
@@ -23,6 +24,7 @@ const basics = {
     rose: '#AA405B',
     pink: '#DBA3B1',
     paper: '#FAFAC8',
+    wood: '#855E42',
   },
   transition: 'all 0.25s cubic-bezier(0.3, 0.3, 0.3, 0.3)',
   fonts: {

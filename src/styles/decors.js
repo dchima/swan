@@ -7,7 +7,7 @@ const decor = {
     content: '';
     display: block;
     width: 0;
-    height: 1px;
+    height: 2px;
     position: relative;
     background-color: ${({ theme }) => theme.link};
     transition: ${basics.transition};

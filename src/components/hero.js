@@ -9,9 +9,9 @@ const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 20vh;
-  margin: 150px 320px 0px 350px;
+  margin: 180px 320px 0px 350px;
   ${Screen.largePhone`
-  margin: 150px 25px 0px 20px;
+  margin: 150px 20px 0px 20px;
   `};
   ${Screen.smallPhone`
   margin: 100px 30px 0px 20px;
