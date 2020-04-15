@@ -6,7 +6,7 @@ import { Brightness } from 'components/svg';
 // Import a couple of SVG files we'll use in the design: https://www.flaticon.com
 
 const BrightnessContainer = styled.button`
-  position: fixed;
+  position: absolute;
   border: none;
   background-color: transparent;
   outline: none;

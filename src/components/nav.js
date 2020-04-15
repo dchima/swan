@@ -19,7 +19,7 @@ const NavContainer = styled.div`
 `;
 
 const LogoContainer = styled.div`
-  position: fixed;
+  position: absolute;
   margin-top: 0px;
   margin-left: 150px;
   svg {
