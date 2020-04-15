@@ -62,7 +62,6 @@ const ProjectCard = ({ content }) => (
       {content.githubUrl} <br />
       {content.externalUrl} <br />
       {content.docsUrl} <br />
-      id: {content.id}
     </BodyText>
   </ContentContainer>
 </Card>
