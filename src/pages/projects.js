@@ -7,12 +7,15 @@ import {
   ProjectCard,
 } from 'components';
 
+const { REACT_APP_API_URL } = process.env;
+console.log(REACT_APP_API_URL);
+
 const AppContainer = styled.div`
   border: 1ps solid black;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 180px 30px 200px;
+  margin: 100px 150px 30px 220px;
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;
@@ -54,7 +57,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://chima-api.herokuapp.com/graphql', {
+    fetch(REACT_APP_API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query }),
