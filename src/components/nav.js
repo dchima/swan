@@ -20,7 +20,7 @@ const NavContainer = styled.div`
 
 const LogoContainer = styled.div`
   position: absolute;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 150px;
   svg {
     fill: ${({ theme }) => theme.logo};

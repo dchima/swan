@@ -10,7 +10,7 @@ const BrightnessContainer = styled.button`
   border: none;
   background-color: transparent;
   outline: none;
-  margin-top: 0px;
+  margin-top: 10px;
   right: 150px;
   svg {
     fill: ${({ theme }) => theme.button};
