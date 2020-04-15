@@ -56,7 +56,13 @@ const Category = styled.h2`
 
 const BodyText = styled.p`
   position: relative;
-  
+  font-size: 17px;
+  ${Screen.largePhone`
+    font-size: ${Basics.fontSize.small};
+  `};
+  ${Screen.smallPhone`
+    font-size: ${Basics.fontSize.xsmall};
+  `};
 `;
 
 const Redirects = styled.div`
