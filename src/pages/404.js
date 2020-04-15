@@ -25,7 +25,7 @@ const SwanContainer = styled.div`
     `};
   }
   ${Screen.largePhone`
-    margin-top: 250px;
+    margin-top: 200px;
   `};
   ${Screen.smallPhone`
     margin-top: 100px;

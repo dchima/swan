@@ -11,7 +11,7 @@ const content = {
     'I am a ', <a href='https://www.goodreads.com/review/list/112872457-chima-daniel' target='_blank'>bibliophile</a>, ', ',
     <a href='https://open.spotify.com/user/xyggj57mzmnmx51g1qkit74bo?si=1kgEEoxYTneS2iLN53AVEg' target='_blank'>melophile</a>,
     ', ', <a href='https://letterboxd.com/dxnhima/films/' target='_blank'>cinephile</a>, ', and your everyday ',
-    <a href='https://myanimelist.net/animelist/dxnchima' target='_blank'>otaku</a>,
+    <a href='https://myanimelist.net/animelist/dxnchima' target='_blank'>otaku</a>, '.',
   ],
 };
 export default content;

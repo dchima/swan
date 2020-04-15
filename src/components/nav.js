@@ -14,13 +14,13 @@ const NavContainer = styled.div`
   background-color: ${({ theme }) => theme.body};
   width: 100%;
   ${Screen.largePhone`
-    height: 80px;
+    height: 50px;
   `};
 `;
 
 const LogoContainer = styled.div`
   position: fixed;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-left: 150px;
   svg {
     fill: ${({ theme }) => theme.logo};

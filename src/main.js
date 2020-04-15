@@ -5,6 +5,7 @@ import { lightTheme, darkTheme } from 'utils/theme';
 import { DarkMode } from 'utils';
 import {
   App,
+  Projects,
   ErrorPage,
 } from 'pages';
 
@@ -18,6 +19,7 @@ const Main = () => {
       <ThemeProvider theme={themeMode}>
         <Switch>
           <Route exact path='/' render={() => <App theme={theme} toggleTheme={toggleTheme}/>} />
+          <Route exact path='/projects' render={() => <Projects theme={theme} toggleTheme={toggleTheme}/> } />
           <Route exact path='/404' render={() => <ErrorPage theme={theme} toggleTheme={toggleTheme}/>} />
           <Redirect to="/404" />
         </Switch>
