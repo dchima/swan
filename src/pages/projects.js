@@ -15,7 +15,7 @@ const AppContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 150px 30px 220px;
+  margin: 100px 300px 30px 350px;
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;

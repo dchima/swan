@@ -13,8 +13,8 @@ const Card = styled.div`
   display: flex;
   overflow: auto;
   flex-direction: column;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-bottom: 30px;
   width: 410px;
   ${Screen.largePhone`
     margin: 20px;
