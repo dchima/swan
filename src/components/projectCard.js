@@ -56,7 +56,7 @@ const Category = styled.h2`
 
 const BodyText = styled.p`
   position: relative;
-  font-size: 17px;
+  font-size: 15px;
   ${Screen.largePhone`
     font-size: ${Basics.fontSize.small};
   `};
@@ -98,8 +98,8 @@ const Link = styled.a`
   }
   svg {
     fill: ${({ theme }) => theme.link};
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
   }
 `;
 
