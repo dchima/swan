@@ -4,10 +4,10 @@ import { Helmet } from 'react-helmet';
 import { GlobalStyle, Screen } from 'styles';
 import {
   Nav,
-  ProjectCard,
+  ArticleCard,
 } from 'components';
 
-const { REACT_APP_API_URL } = process.env;
+const { REACT_APP_API_URL, REACT_APP_API_SECRET } = process.env;
 
 const AppContainer = styled.div`
   border: 1ps solid black;
@@ -35,7 +35,7 @@ const Batch = styled.div`
 
 const query = `
   query {
-    getProjects(secretKey: "currentsecretkey") {
+    getProjects(secretKey: "${REACT_APP_API_SECRET}") {
       id
       title
       category
@@ -47,6 +47,9 @@ const query = `
     }
   }
 `;
+
+
+
 class App extends Component {
   constructor() {
     super();
@@ -87,5 +90,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

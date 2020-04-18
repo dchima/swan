@@ -55,7 +55,7 @@ const App = () => (
   <HeroContainer>
     <Title>Chima Daniel</Title>
     <SubTitle>SOFTWARE ENGINEER</SubTitle>
-    <BodyText>{content.bodyText}</BodyText>
+    <BodyText dangerouslySetInnerHTML={{ __html: content.bodyText }} />
   </HeroContainer>
 );
 
