@@ -44,7 +44,6 @@ const query = `
   }
 `;
 
-console.log(query);
 class App extends Component {
   constructor() {
     super();
