@@ -7,10 +7,9 @@ import {
   ProjectCard,
 } from 'components';
 
-const { REACT_APP_API_URL } = process.env;
+const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
 
 const AppContainer = styled.div`
-  border: 1ps solid black;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -35,7 +34,7 @@ const Batch = styled.div`
 
 const query = `
   query {
-    getProjects(secretKey: "currentsecretkey") {
+    getProjects(secretKey: "${REACT_APP_API_KEY}") {
       id
       title
       category

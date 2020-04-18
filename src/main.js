@@ -23,7 +23,7 @@ const Main = () => {
           <Route exact path='/' render={() => <App theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/projects' render={() => <Projects theme={theme} toggleTheme={toggleTheme}/> } />
           <Route exact path='/publish' render={() => <Works theme={theme} toggleTheme={toggleTheme}/> } />
-          <Route exact path='bestof' render={() => <BestOf theme={theme} toggleTheme={toggleTheme}/>} />
+          <Route exact path='/bestof' render={() => <BestOf theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/404' render={() => <ErrorPage theme={theme} toggleTheme={toggleTheme}/>} />
           <Redirect to="/404" />
         </Switch>

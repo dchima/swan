@@ -7,14 +7,12 @@ import {
   ArticleCard,
 } from 'components';
 
-const { REACT_APP_API_URL, REACT_APP_API_SECRET } = process.env;
-
+const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
 const AppContainer = styled.div`
-  border: 1ps solid black;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 200px 30px 380px;
+  margin: 100px 30px 50px 160px;
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;
@@ -35,26 +33,23 @@ const Batch = styled.div`
 
 const query = `
   query {
-    getProjects(secretKey: "${REACT_APP_API_SECRET}") {
+    getArticles(secretKey: "${REACT_APP_API_KEY}"){
       id
       title
+      author
       category
-      description
-      stacks
-      githubUrl
-      externalUrl
-      docsUrl 
+      link
+      summary
     }
   }
 `;
 
-
-
+console.log(query);
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      projects: [],
+      articles: [],
     };
   }
 
@@ -66,27 +61,30 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((response) => {
-        this.setState({ projects: response.data.getProjects });
+        console.log(response);
+        this.setState({ articles: response.data.getArticles });
       })
       .catch(console.log);
   }
 
   render() {
-    const projects = this.state.projects.map(
-      (project) => <ProjectCard key={project.id} content={project} />,
+    const articles = this.state.articles.map(
+      (article) => <ArticleCard key={article.id} content={article} />,
     );
     return (
       <AppContainer>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Projects</title>
+          <title>Best Of the Internet</title>
         </Helmet>
         <GlobalStyle />
         <Batch>
-          {projects}
+          {articles}
         </Batch>
         <Nav theme={this.props.theme} toggleTheme={this.props.toggleTheme}/>
       </AppContainer>
     );
   }
 }
+
+export default App;
