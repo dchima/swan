@@ -56,6 +56,7 @@ const Subtitle = styled.h2`
 const BodyText = styled.p`
   position: relative;
   font-size: 15px;
+  font-weight: 900;
   ${Screen.largePhone`
     font-size: ${Basics.fontSize.small};
   `};
@@ -106,8 +107,8 @@ const ArticleCard = ({ content }) => (
       <Title>
         <TitleLink
         arial-label='link'
-        href={content.link}
-        target="_blank">
+        href={content.link || content.slug}
+        target={content.link ? '_blank' : '' }>
           {content.title}
         </TitleLink>
       </Title>
@@ -115,7 +116,7 @@ const ArticleCard = ({ content }) => (
         {content.author} | {content.category}
       </Subtitle>
       <BodyText>
-        {content.summary}
+        {content.summary || content.description}
       </BodyText>
       {/* <Redirects>
         {content.link

@@ -57,6 +57,7 @@ const Category = styled.h2`
 const BodyText = styled.p`
   position: relative;
   font-size: 15px;
+  font-weight: 900;
   ${Screen.largePhone`
     font-size: ${Basics.fontSize.small};
   `};

@@ -155,10 +155,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: 13px;
     font-family: ${Basics.fonts.BeVietnam};
     color: ${({ theme }) => theme.color};
-    font-weight: 900;
     word-spacing: 2px;
   }
 

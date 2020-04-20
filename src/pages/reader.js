@@ -4,57 +4,44 @@ import { Helmet } from 'react-helmet';
 import { GlobalStyle, Screen } from 'styles';
 import {
   Nav,
-  ProjectCard,
+  Page,
 } from 'components';
 
-const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
-
+const { REACT_APP_API_URL } = process.env;
 const AppContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 200px 30px 380px;
+  margin: 230px 400px 50px 400px;
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;
   `};
 `;
-const Batch = styled.div`
-  position: relative;
-  margin-bottom: 20px;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  ${Screen.largePhone`
-    margin-top: 0px;
-    align-items: center;
-    margin-bottom: 10px;
-`};
-`;
 
-const query = `
-  query {
-    getProjects(secretKey: "${REACT_APP_API_KEY}") {
-      id
-      title
-      category
-      description
-      stacks
-      githubUrl
-      externalUrl
-      docsUrl 
-    }
-  }
-`;
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      projects: [],
+      publication: {},
     };
   }
 
   componentDidMount() {
+    const { slug } = this.props.match.params;
+    const query = `
+      query {
+        getPublication(slug: "${slug}") {
+          id
+          title
+          author
+          category
+          description
+          slug
+          body
+        }
+      }
+    `;
     fetch(REACT_APP_API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -62,26 +49,22 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((response) => {
-        this.setState({ projects: response.data.getProjects });
+        this.setState({ publication: response.data.getPublication });
       })
       // eslint-disable-next-line no-console
       .catch(console.log);
   }
 
   render() {
-    const projects = this.state.projects.map(
-      (project) => <ProjectCard key={project.id} content={project} />,
-    );
+    const { publication } = this.state;
     return (
       <AppContainer>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Projects</title>
+          <title>{publication.title}</title>
         </Helmet>
         <GlobalStyle />
-        <Batch>
-          {projects}
-        </Batch>
+        <Page content={publication} />
         <Nav theme={this.props.theme} toggleTheme={this.props.toggleTheme}/>
       </AppContainer>
     );

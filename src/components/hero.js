@@ -42,7 +42,8 @@ const SubTitle = styled.h2`
   `};
 `;
 const BodyText = styled.p`
-    font-size: 17px;
+  font-size: 17px;
+  font-weight: 900;
   ${Screen.largePhone`
   font-size: ${Basics.fontSize.small};
   `};
