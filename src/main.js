@@ -27,7 +27,7 @@ const Main = () => {
           <Route exact path='/publish' render={() => <Works theme={theme} toggleTheme={toggleTheme}/> } />
           <Route exact path='/bestof' render={() => <BestOf theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/collection' render={() => <Collection theme={theme} toggleTheme={toggleTheme}/>} />
-          <Route path='/:slug' render={(props) => <Reader {...props} theme={theme} toggleTheme={toggleTheme}/>} />
+          <Route path='/collection/:slug' render={(props) => <Reader {...props} theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/404' render={() => <ErrorPage theme={theme} toggleTheme={toggleTheme}/>} />
           <Redirect to="/404" />
         </Switch>

@@ -107,7 +107,7 @@ const ArticleCard = ({ content }) => (
       <Title>
         <TitleLink
         arial-label='link'
-        href={content.link || content.slug}
+        href={content.link || `collection/${content.slug}`}
         target={content.link ? '_blank' : '' }>
           {content.title}
         </TitleLink>
