@@ -10,7 +10,7 @@ const content = {
   bodyText2: `I write for the internet @  <a href='https://medium.com/@dxnchima' target='_blank'>medium</a>, 
     <a href='https://dev.to/dxnchima' target='_blank'>dev.to</a>, and <a href='https://danielchima.substack.com/' target='_blank'>substack</a>.
     I also write prose and a little poetry. Here's my <a href='/collection'>collection</a>. <br /> <br />
-    Over the years, I’ve curated a collection of <a href='/bestof'>great works</a>, from all across the web. These are, in my opinion, the best of the internet. <br /><br />
+    Over the years, I’ve curated a collection of <a href='/bestof'>great works</a> from all across the web. These are, in my opinion, the best of the internet. <br /><br />
     I also collect <a href='/art'>internet art</a>.`,
 };
 export default content;

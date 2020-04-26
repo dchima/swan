@@ -14,7 +14,7 @@ export const darkTheme = {
   body: Basics.colors.black,
   logo: Basics.colors.wood,
   subtitle: Basics.colors.wood,
-  color: Basics.colors.white,
+  color: Basics.colors.nightShift,
   link: Basics.colors.wood,
   text: '#FAFAFA',
   button: Basics.colors.wood,

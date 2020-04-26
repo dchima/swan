@@ -25,6 +25,7 @@ const basics = {
     pink: '#DBA3B1',
     paper: '#FAFAC8',
     wood: '#855E42',
+    nightShift: '#D1D1C0',
   },
   transition: 'all 0.25s cubic-bezier(0.3, 0.3, 0.3, 0.3)',
   fonts: {
