@@ -5,6 +5,7 @@ import { GlobalStyle, Screen } from 'styles';
 import {
   Nav,
   Page,
+  Loader,
 } from 'components';
 
 const { REACT_APP_API_URL } = process.env;
@@ -12,18 +13,27 @@ const AppContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 230px 400px 50px 400px;
+  margin: 230px 750px 50px 200px;
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;
   `};
 `;
 
+// const loaderStyle = {
+//   width: '10%',
+//   margin: 'auto',
+//   display: 'block',
+//   marginLeft: '70%',
+//   border: '1px solid blue',
+// };
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
       publication: {},
+      loading: true,
     };
   }
 
@@ -49,14 +59,15 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((response) => {
-        this.setState({ publication: response.data.getPublication });
+        this.setState({ publication: response.data.getPublication, loading: false });
       })
       // eslint-disable-next-line no-console
       .catch(console.log);
   }
 
   render() {
-    const { publication } = this.state;
+    const { publication, loading } = this.state;
+    if (loading) return <Loader />;
     return (
       <AppContainer>
         <Helmet>

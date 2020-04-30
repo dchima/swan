@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Basics, Screen } from 'styles';
+import { links } from 'config';
 import {
   StackFill,
   SvgGithub,
@@ -13,9 +14,9 @@ const Card = styled.div`
   display: flex;
   overflow: auto;
   flex-direction: column;
-  margin-right: 100px;
-  margin-bottom: 30px;
-  width: 410px;
+  margin-right: 30px; //margin-right: 100px;
+  margin-bottom: 60px;
+  width: 440px; //width: 410px;
   ${Screen.largePhone`
     margin: 20px;
     width: 100%;
@@ -36,21 +37,22 @@ const ContentContainer = styled.div`
   `};
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   margin: 0px;
-  font-weight: 500;
-  font-size: ${Basics.fontSize.large};
+  font-weight: 700;
+  font-size: ${Basics.fontSize.medium};
+  color: ${({ theme }) => theme.color};
   
   ${Screen.largePhone`
-  font-size: 40px;
+  font-size: 22px;
   `};
   ${Screen.smallPhone`
-    font-size: 40px;
+    font-size: 22px;
   `};
 `;
 
 const Category = styled.h2`
-  margin: 20px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   font-size: ${Basics.fontSize.small};
 `;
 
@@ -108,10 +110,13 @@ const ProjectCard = ({ content }) => {
   const stacks = content.stacks.map(
     (item, i) => <Item key={i}>
       <Link key={i}
-    aria-label={item}>
-    <StackFill name={item} />
-  </Link>
-      </Item>,
+        href={links.stackLinks[links.stackLinks.map(x => x.name).indexOf(item)].url}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        aria-label={item}>
+        <StackFill name={item} />
+      </Link>
+    </Item>,
   );
   return (
     <Card>
@@ -119,6 +124,13 @@ const ProjectCard = ({ content }) => {
       <Title>
         {content.title}
       </Title>
+      <Category>
+        {content.category}
+      </Category>
+      <BodyText>
+        {content.description} <br />
+      </BodyText>
+      <StackContainer>
       <Redirects>
           {content.githubUrl
             && <Item>
@@ -151,13 +163,6 @@ const ProjectCard = ({ content }) => {
             </Item>
           }
       </Redirects>
-      <Category>
-        {content.category}
-      </Category>
-      <BodyText>
-        {content.description} <br />
-      </BodyText>
-      <StackContainer>
         {stacks}
       </StackContainer>
     </ContentContainer>

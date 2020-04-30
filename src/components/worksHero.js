@@ -21,14 +21,15 @@ a {
 `;
 
 const BodyText = styled.p`
-font-size: 17px;
-font-weight: 900;
-${Screen.largePhone`
-font-size: ${Basics.fontSize.small};
-`};
-${Screen.smallPhone`
-font-size: ${Basics.fontSize.xsmall};
-`};
+  position: relative;
+  font-weight: 900;
+  font-size: 15px;
+  ${Screen.largePhone`
+    font-size: ${Basics.fontSize.small};
+  `};
+  ${Screen.smallPhone`
+    font-size: ${Basics.fontSize.xsmall};
+  `};
 `;
 
 const App = () => (

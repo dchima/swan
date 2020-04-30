@@ -32,20 +32,14 @@ const Title = styled.h1`
   `};
 `;
 const SubTitle = styled.h2`
-  margin: 0px 0px 10px 0px;
-  font-size: 17px;
-  ${Screen.largePhone`
-  font-size: 13px;
-  `};
-  ${Screen.smallPhone`
-    font-size: 12px;
-  `};
+  margin: 0px 0px 0px 0px;
+  font-size: ${Basics.fontSize.small};
 `;
 const BodyText = styled.p`
-  font-size: 17px;
   font-weight: 900;
+  font-size: 15px;
   ${Screen.largePhone`
-  font-size: ${Basics.fontSize.small};
+    font-size: ${Basics.fontSize.small};
   `};
   ${Screen.smallPhone`
     font-size: ${Basics.fontSize.xsmall};
@@ -55,7 +49,7 @@ const BodyText = styled.p`
 const App = () => (
   <HeroContainer>
     <Title>Chima Daniel</Title>
-    <SubTitle>SOFTWARE ENGINEER</SubTitle>
+    <SubTitle>Software Engineer</SubTitle>
     <BodyText dangerouslySetInnerHTML={{ __html: content.bodyText }} />
   </HeroContainer>
 );

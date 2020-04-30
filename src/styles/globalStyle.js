@@ -115,7 +115,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     background-color: ${({ theme }) => theme.body};
     font-family: ${Basics.fonts.BeVietnam};
-
   }
   
   h1 {

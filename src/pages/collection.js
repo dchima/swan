@@ -5,6 +5,7 @@ import { GlobalStyle, Screen } from 'styles';
 import {
   Nav,
   ArticleCard,
+  Loader,
 } from 'components';
 
 const { REACT_APP_API_URL } = process.env;
@@ -49,6 +50,7 @@ class App extends Component {
     super();
     this.state = {
       publications: [],
+      loading: true,
     };
   }
 
@@ -60,7 +62,7 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((response) => {
-        this.setState({ publications: response.data.getPublications });
+        this.setState({ publications: response.data.getPublications, loading: false });
       })
       // eslint-disable-next-line no-console
       .catch(console.log);
@@ -70,6 +72,7 @@ class App extends Component {
     const publications = this.state.publications.map(
       (publication) => <ArticleCard key={publication.id} content={publication} />,
     );
+    if (this.state.loading) return <Loader />;
     return (
       <AppContainer>
         <Helmet>

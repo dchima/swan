@@ -5,6 +5,7 @@ import { GlobalStyle, Screen } from 'styles';
 import {
   Nav,
   ProjectCard,
+  Loader,
 } from 'components';
 
 const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
@@ -13,7 +14,7 @@ const AppContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 200px 30px 380px;
+  margin: 100px 30px 50px 160px;
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;
@@ -51,6 +52,7 @@ class App extends Component {
     super();
     this.state = {
       projects: [],
+      loading: true,
     };
   }
 
@@ -62,7 +64,7 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((response) => {
-        this.setState({ projects: response.data.getProjects });
+        this.setState({ projects: response.data.getProjects, loading: false });
       })
       // eslint-disable-next-line no-console
       .catch(console.log);
@@ -72,6 +74,7 @@ class App extends Component {
     const projects = this.state.projects.map(
       (project) => <ProjectCard key={project.id} content={project} />,
     );
+    if (this.state.loading) return <Loader />;
     return (
       <AppContainer>
         <Helmet>

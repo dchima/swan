@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Basics, Screen } from 'styles';
 
 const ContentContainer = styled.div`
-position: relative;
+  position: relative;
   padding: 10px 20px;
   margin-bottom: 100px;
   ${Screen.largeScreen`
@@ -15,30 +15,24 @@ position: relative;
 `;
 
 const Title = styled.h2`
-  font-size: ${Basics.fontSize.xxlarge};
+  font-size: ${Basics.fontSize.medium};
   color: ${({ theme }) => theme.color};
-  font-weight: 900;
-  margin: 0;
+  font-weight: 700;
+  margin: 0px;
   ${Screen.largePhone`
-  font-size: 40px;
+  font-size: 22px;
   `};
   ${Screen.smallPhone`
-    font-size: 40px;
+    font-size: 22px;
   `};
 `;
 const SubTitle = styled.h2`
-  margin: 0px;
-  font-size: 17px;
-  ${Screen.largePhone`
-  font-size: 13px;
-  `};
-  ${Screen.smallPhone`
-    font-size: 12px;
-  `};
+  margin: 0px 0px 0px 0px;
+  font-size: ${Basics.fontSize.small};
 `;
 const BodyText = styled.p`
-  padding-top: 150px;
-  font-size: 20px;
+  padding-top: 50px;
+  font-size: 15px;
   font-weight: 500;
   ${Screen.largePhone`
     font-size: ${Basics.fontSize.small};

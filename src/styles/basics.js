@@ -17,6 +17,7 @@ const basics = {
     deepGreen: '#194f0d',
     yellow: '#FFF11B',
     washOrange: '#fff8eb',
+    citrus: '#E0861F',
     chalkRed: '#C1B6B6',
     chalk: '#bababa',
     deepRed: '#650019',
