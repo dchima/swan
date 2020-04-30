@@ -63,7 +63,7 @@ class App extends Component {
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
-        this.setState({ articles: response.data.getArticles, loading: true });
+        this.setState({ articles: response.data.getArticles, loading: false });
       })
       // eslint-disable-next-line no-console
       .catch(console.log);
