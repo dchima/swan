@@ -5,9 +5,9 @@ import colorLoader from 'images/loadercolor.gif';
 export const lightTheme = {
   body: Basics.colors.creamWhite,
   logo: Basics.colors.black,
-  subtitle: Basics.colors.wood,
+  subtitle: Basics.colors.chocolate,
   color: Basics.colors.black,
-  link: Basics.colors.wood,
+  link: Basics.colors.chocolate,
   text: '#363537',
   button: Basics.colors.black,
   loader: darkLoader,

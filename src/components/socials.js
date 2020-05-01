@@ -16,6 +16,7 @@ const SocialContainer = styled.div`
 
 const Item = styled.div`
   position: relative;
+  margin-right: 24px;
   &:hover,
   &:focus {
     transform: translateY(-5px);
@@ -25,7 +26,6 @@ const Item = styled.div`
 
 const Link = styled.a`
 position: relative;
-padding-right: 24px;
 &:hover,
 &:focus {
   svg {
