@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Basics, Decors } from 'styles';
+import { Basics, Screen, Decors } from 'styles';
 import { SocialFill } from 'components/svg';
 import { links } from 'config';
 
@@ -10,12 +10,12 @@ const SocialContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 20px;
 `;
 
 
 const Item = styled.div`
   position: relative;
-  
   &:hover,
   &:focus {
     transform: translateY(-5px);
@@ -25,7 +25,7 @@ const Item = styled.div`
 
 const Link = styled.a`
 position: relative;
-padding: 12px;
+padding-right: 24px;
 &:hover,
 &:focus {
   svg {
@@ -36,6 +36,10 @@ svg {
   fill: ${({ theme }) => theme.link};
   width: 18px;
   height: 18px;
+  ${Screen.largePhone`
+  width: 15px;
+  height: 15px;
+  `};
 }
 `;
 const Socials = () => {

@@ -10,9 +10,11 @@ import {
 const AppContainer = styled.div`
   position: relative;
   display: flex;
+  min-height: 700px;
   flex-direction: column;
   margin: 100px 180px 30px 200px;
   ${Screen.largePhone`
+  top: 0px;
   margin-left: 10px;
   margin-right: 10px;
 `};

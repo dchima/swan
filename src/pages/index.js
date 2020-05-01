@@ -1,6 +1,5 @@
 import App from './app';
 import Projects from './projects';
-import Works from './works';
 import BestOf from './bestof';
 import Collection from './collection';
 import Reader from './reader';
@@ -11,7 +10,6 @@ export {
   App,
   ErrorPage,
   Projects,
-  Works,
   BestOf,
   Collection,
   Reader,

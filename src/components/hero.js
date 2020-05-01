@@ -9,12 +9,12 @@ const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 20vh;
-  margin: 180px 320px 0px 350px;
+  margin: 150px 320px 0px 350px;
   ${Screen.largePhone`
-  margin: 150px 20px 0px 20px;
+    margin: 100px 20px 100px 20px;
   `};
   ${Screen.smallPhone`
-  margin: 100px 30px 0px 20px;
+    margin: 0px 30px 0px 20px;
   `};
 `;
 
@@ -39,9 +39,6 @@ const BodyText = styled.p`
   font-weight: 900;
   font-size: 15px;
   ${Screen.largePhone`
-    font-size: ${Basics.fontSize.small};
-  `};
-  ${Screen.smallPhone`
     font-size: ${Basics.fontSize.xsmall};
   `};
   a {

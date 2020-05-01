@@ -56,9 +56,6 @@ const BodyText = styled.p`
   font-size: 15px;
   font-weight: 900;
   ${Screen.largePhone`
-    font-size: ${Basics.fontSize.small};
-  `};
-  ${Screen.smallPhone`
     font-size: ${Basics.fontSize.xsmall};
   `};
 `;

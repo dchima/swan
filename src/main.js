@@ -6,7 +6,6 @@ import { DarkMode } from 'utils';
 import {
   App,
   Projects,
-  Works,
   BestOf,
   Collection,
   ErrorPage,
@@ -24,7 +23,6 @@ const Main = () => {
         <Switch>
           <Route exact path='/' render={() => <App theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/projects' render={() => <Projects theme={theme} toggleTheme={toggleTheme}/> } />
-          <Route exact path='/publish' render={() => <Works theme={theme} toggleTheme={toggleTheme}/> } />
           <Route exact path='/bestof' render={() => <BestOf theme={theme} toggleTheme={toggleTheme}/>} />
           <Route exact path='/collection' render={() => <Collection theme={theme} toggleTheme={toggleTheme}/>} />
           <Route path='/collection/:slug' render={(props) => <Reader {...props} theme={theme} toggleTheme={toggleTheme}/>} />
