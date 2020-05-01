@@ -3,6 +3,7 @@ import Projects from './projects';
 import BestOf from './bestof';
 import Collection from './collection';
 import Reader from './reader';
+import Art from './art';
 import ErrorPage from './404';
 
 
@@ -13,4 +14,5 @@ export {
   BestOf,
   Collection,
   Reader,
+  Art,
 };
