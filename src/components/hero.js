@@ -36,10 +36,10 @@ const SubTitle = styled.h2`
 `;
 const BodyText = styled.p`
   ${Decors.animate.fadeIn(2)};
-  font-weight: 900;
+  font-weight: 500;
   font-size: 15px;
   ${Screen.largePhone`
-    font-size: ${Basics.fontSize.xsmall};
+    font-size: ${Basics.fontSize.small};
   `};
   a {
     ${Decors.inLine};

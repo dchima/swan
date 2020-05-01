@@ -54,9 +54,9 @@ const Subtitle = styled.h2`
 const BodyText = styled.p`
   position: relative;
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 500;
   ${Screen.largePhone`
-    font-size: ${Basics.fontSize.xsmall};
+    font-size: ${Basics.fontSize.small};
   `};
 `;
 

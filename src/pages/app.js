@@ -14,10 +14,9 @@ const AppContainer = styled.div`
   flex-direction: column;
   margin: 100px 180px 30px 200px;
   ${Screen.largePhone`
-  top: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+    margin: 50px 10px 30px 10px;
 `};
+
 `;
 
 const App = ({ theme, toggleTheme }) => (
