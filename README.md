@@ -8,7 +8,7 @@ personal site v3
 This is the third version of my personal [website](https://danielchimav3.netlify.app), hosted on [netlify](https://netlify.com).
 
 
-<img width="1678" alt="Screenshot 2020-04-20 at 03 19 23" src="https://user-images.githubusercontent.com/37340699/79707882-cdb36900-82b5-11ea-9560-21b2a7a45fdb.png">
+<img width="1678" alt="Screenshot 2020-04-20 at 03 19 23" src="https://user-images.githubusercontent.com/37340699/80842434-74263500-8bf9-11ea-9f98-3a5058190200.png">
 
 
 ## :wrench: Installation 

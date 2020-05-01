@@ -21,11 +21,13 @@ const BrightnessContainer = styled.button`
       height: 25px;
     `};
   }
-  ${Screen.tablet`
-    right: 50px;
+  ${Screen.pad`
+    right: 100px;
+    margin-top: 20px;
   `};
   ${Screen.miniTablet`
     right: 25px;
+    margin-top: 10px;
   `};
 `;
 

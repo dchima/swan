@@ -6,12 +6,6 @@ const ContentContainer = styled.div`
   position: relative;
   padding: 10px 20px;
   margin-bottom: 100px;
-  ${Screen.largeScreen`
-  padding: 10px 20px;
-  `};
-  ${Screen.tablet`
-    padding: 40px 20px;
-  `};
 `;
 
 const Title = styled.h2`

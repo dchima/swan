@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { GlobalStyle, Screen } from 'styles';
+import { GlobalStyle, Screen, Decors } from 'styles';
 import {
   Nav,
   ArticleCard,
@@ -10,10 +10,17 @@ import {
 
 const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
 const AppContainer = styled.div`
+${Decors.animate.fadeIn(10)};
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 100px 30px 50px 160px;
+  ${Screen.pad`
+  margin: 100px 30px 50px 50px;
+  `};
+  ${Screen.tablet`
+    margin: 100px 30px 50px 160px;
+  `};
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;

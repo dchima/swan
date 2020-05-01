@@ -3,6 +3,7 @@ import { css } from 'styled-components';
 const sizes = {
   xlargeScreen: 1440,
   largeScreen: 1200,
+  pad: 1024,
   pc: 1000,
   tablet: 768,
   miniTablet: 600,

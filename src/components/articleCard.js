@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Basics, Screen, Decors } from 'styles';
 
 const Card = styled.div`
-  ${Decors.animate.fadeIn(2)};
   position: relative;
   display: flex;
   overflow: auto;

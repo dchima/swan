@@ -14,19 +14,14 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 230px 750px 50px 200px;
+  ${Screen.pad`
+  margin: 200px 100px 100px 100px;
+  `};
   ${Screen.largePhone`
     margin-left: 10px;
     margin-right: 10px;
   `};
 `;
-
-// const loaderStyle = {
-//   width: '10%',
-//   margin: 'auto',
-//   display: 'block',
-//   marginLeft: '70%',
-//   border: '1px solid blue',
-// };
 
 class App extends Component {
   constructor() {

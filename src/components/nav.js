@@ -31,11 +31,13 @@ const LogoContainer = styled.div`
       height: 25px;
     `};
   }
-  ${Screen.tablet`
-    margin-left: 80px;
+  ${Screen.pad`
+    margin-left: 100px;
+    margin-top: 20px;
   `};
   ${Screen.miniTablet`
     margin-left: 25px;
+    margin-top: 10px;
   `};
 `;
 
