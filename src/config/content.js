@@ -9,7 +9,7 @@ const content = {
     <a href='https://myanimelist.net/animelist/dxnchima' target='_blank'>otaku</a>.
     I also <a href='/collection'>write</a> essays, prose and a little poetry. <br /><br />
     Over the years, I’ve curated a collection of <a href='/bestof'>great works</a> from all across the web. These are, in my opinion, the best of the internet. I also collect <a href='/art'>art</a>.
-    <br /><br /> I write for the internet @  <a href='https://medium.com/@dxnchima' target='_blank'>medium</a>, 
-    <a href='https://dev.to/dxnchima' target='_blank'>dev.to</a>, and <a href='https://danielchima.substack.com/' target='_blank'>substack</a>.`,
+    <br /><br /> I write for the internet @  <a href='https://medium.com/@dxnchima' target='_blank'>medium,</a>
+    <a href='https://dev.to/dxnchima' target='_blank'>dev.to,</a> and <a href='https://danielchima.substack.com/' target='_blank'>substack</a>.`,
 };
 export default content;
