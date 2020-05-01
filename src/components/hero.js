@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Basics, Screen, Decors } from 'styles';
 import { content } from 'config';
-
+import Socials from './socials';
 
 const HeroContainer = styled.div`
   position: relative;
@@ -16,12 +16,10 @@ const HeroContainer = styled.div`
   ${Screen.smallPhone`
   margin: 100px 30px 0px 20px;
   `};
-  a {
-    ${Decors.inLine};
-  }
 `;
 
 const Title = styled.h1`
+  ${Decors.animate.fadeIn(2)};
   font-size: ${Basics.fontSize.large};
   margin: 0;
   ${Screen.largePhone`
@@ -32,10 +30,12 @@ const Title = styled.h1`
   `};
 `;
 const SubTitle = styled.h2`
+  ${Decors.animate.fadeIn(2)};
   margin: 0px 0px 0px 0px;
   font-size: ${Basics.fontSize.small};
 `;
 const BodyText = styled.p`
+  ${Decors.animate.fadeIn(2)};
   font-weight: 900;
   font-size: 15px;
   ${Screen.largePhone`
@@ -44,6 +44,9 @@ const BodyText = styled.p`
   ${Screen.smallPhone`
     font-size: ${Basics.fontSize.xsmall};
   `};
+  a {
+    ${Decors.inLine};
+  }
 `;
 
 const App = () => (
@@ -51,6 +54,7 @@ const App = () => (
     <Title>Chima Daniel</Title>
     <SubTitle>Software Engineer</SubTitle>
     <BodyText dangerouslySetInnerHTML={{ __html: content.bodyText }} />
+    <Socials />
   </HeroContainer>
 );
 

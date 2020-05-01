@@ -46,8 +46,8 @@ const query = `
 `;
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       loading: true,
@@ -62,7 +62,6 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((response) => {
-        console.log(response);
         this.setState({ articles: response.data.getArticles, loading: false });
       })
       // eslint-disable-next-line no-console
@@ -71,7 +70,7 @@ class App extends Component {
 
   render() {
     const articles = this.state.articles.map(
-      (article) => <ArticleCard key={article.id} content={article} />,
+      (article) => <ArticleCard key={article.id} content={article}/>,
     );
     if (this.state.loading) return <Loader />;
     return (

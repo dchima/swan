@@ -89,5 +89,31 @@ const links = {
       url: 'https://www.netlify.com/',
     },
   ],
+  socials: [
+    {
+      name: 'Mail',
+      url: 'mailto:dcnnad@gmail.com',
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://linkedin.com/in/danielchimannadika/',
+    },
+    {
+      name: 'Github',
+      url: 'https://github.com/dchima',
+    },
+    {
+      name: 'Dribble',
+      url: 'https://dribbble.com/dchima',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/dxnchima/',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/dxnchima',
+    },
+  ],
 };
 export default links;

@@ -110,7 +110,7 @@ const ProjectCard = ({ content }) => {
   const stacks = content.stacks.map(
     (item, i) => <Item key={i}>
       <Link key={i}
-        href={links.stackLinks[links.stackLinks.map(x => x.name).indexOf(item)].url}
+        href={links.stackLinks[links.stackLinks.map((x) => x.name).indexOf(item)].url}
         target="_blank"
         rel="nofollow noopener noreferrer"
         aria-label={item}>

@@ -5,6 +5,7 @@ import WorksHero from './worksHero';
 import ArticleCard from './articleCard';
 import Page from './page';
 import Loader from './loader';
+import Socials from './socials';
 
 export {
   Nav,
@@ -14,4 +15,5 @@ export {
   ArticleCard,
   Page,
   Loader,
+  Socials,
 };

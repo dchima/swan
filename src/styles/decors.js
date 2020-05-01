@@ -1,4 +1,5 @@
-import { css } from 'styled-components';
+import { css, keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 import basics from './basics';
 
 const decor = {
@@ -14,6 +15,9 @@ const decor = {
     opacity: 0.5;
   }
   `,
+  animate: {
+    fadeIn: (duration) => css`animation: ${duration}s ${keyframes(fadeIn)};`,
+  },
 };
 
 export default decor;

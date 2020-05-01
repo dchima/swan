@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Basics, Screen, Decors } from 'styles';
-// import {
-//   SvgExternalLink,
-// } from './svg';
 
 const Card = styled.div`
+  ${Decors.animate.fadeIn(2)};
   position: relative;
   display: flex;
   overflow: auto;
@@ -69,37 +67,6 @@ const TitleLink = styled.a`
   color: ${({ theme }) => theme.color};
   ${Decors.inLine};
 `;
-// const Redirects = styled.div`
-//   position: relative;
-//   display: flex;
-//   flex-wrap: wrap;
-// `;
-
-
-// const Item = styled.div`
-//   position: relative;
-//   &:hover,
-//   &:focus {
-//     transform: translateY(-5px);
-//     transition: ${Basics.transition};
-//   }
-// `;
-
-// const Svg = styled.a`
-//   position: relative;
-//   float: left;
-//   &:hover,
-//   &:focus {
-//     svg {
-//       fill:${({ theme }) => theme.color};
-//     }
-//   }
-//   svg {
-//     fill: ${({ theme }) => theme.link};
-//     width: 22px;
-//     height: 22px;
-//   }
-// `;
 
 const ArticleCard = ({ content }) => (
     <Card>
@@ -118,18 +85,6 @@ const ArticleCard = ({ content }) => (
       <BodyText>
         {content.summary || content.description}
       </BodyText>
-      {/* <Redirects>
-        {content.link
-          && <Item>
-            <Svg
-              arial-label='link'
-              href={content.link}
-              target="_blank">
-              <SvgExternalLink />
-            </Svg>
-          </Item>
-        }
-      </Redirects> */}
     </ContentContainer>
   </Card>
 );
