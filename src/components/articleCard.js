@@ -9,14 +9,14 @@ const Card = styled.div`
   overflow: auto;
   flex-direction: column;
   margin-right: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   width: 440px;
   ${Screen.largePhone`
-    margin: 20px;
+    margin: 0px 3px;
     width: 100%;
   `};
   ${Screen.smallPhone`
-  margin: 10px 3px;
+  margin: 0px 3px;
   width: 300px;
 `};
 `;
