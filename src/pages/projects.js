@@ -8,7 +8,7 @@ import {
   Loader,
 } from 'components';
 
-const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
+const { REACT_APP_API_URL } = process.env;
 
 const AppContainer = styled.div`
   position: relative;
@@ -35,7 +35,7 @@ const Batch = styled.div`
 
 const query = `
   query {
-    getProjects(secretKey: "${REACT_APP_API_KEY}") {
+    getProjects {
       id
       title
       category
