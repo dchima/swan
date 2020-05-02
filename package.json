@@ -1,5 +1,5 @@
 {
-  "name": "react-template",
+  "name": "swan",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
     "website"
   ],
   "author": "Chima Nnadika <dcnnad@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dchima/swan/issues"
   },
