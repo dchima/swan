@@ -5,7 +5,7 @@ import { content } from 'config';
 import Socials from './socials';
 
 const HeroContainer = styled.div`
-${Decors.animate.fadeIn(10)};
+${Decors.animate.fadeIn(4)};
   position: relative;
   display: flex;
   flex-direction: column;

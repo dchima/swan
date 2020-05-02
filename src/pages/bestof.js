@@ -10,7 +10,7 @@ import {
 
 const { REACT_APP_API_URL, REACT_APP_API_KEY } = process.env;
 const AppContainer = styled.div`
-${Decors.animate.fadeIn(10)};
+${Decors.animate.fadeIn(4)};
   position: relative;
   display: flex;
   flex-direction: column;

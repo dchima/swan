@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { GlobalStyle, Screen } from 'styles';
+import { GlobalStyle, Screen, Decors } from 'styles';
 import {
   Nav,
   Page,
@@ -10,6 +10,7 @@ import {
 
 const { REACT_APP_API_URL } = process.env;
 const AppContainer = styled.div`
+  ${Decors.animate.fadeIn(4)};
   position: relative;
   display: flex;
   flex-direction: column;

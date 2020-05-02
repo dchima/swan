@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Basics, Screen, Decors } from 'styles';
+import { Basics, Screen } from 'styles';
 import { SocialFill } from 'components/svg';
 import { links } from 'config';
 
 
 const SocialContainer = styled.div`
-  ${Decors.animate.fadeIn(2)};
   display: flex;
   flex-wrap: wrap;
   width: 100%;
