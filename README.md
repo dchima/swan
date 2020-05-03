@@ -31,4 +31,4 @@ npm start
 ```
 
 ## Status
-:construction: site under construction.
+:tada: the site is live. still a few things in the works.
