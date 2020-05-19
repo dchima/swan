@@ -11,7 +11,12 @@ ${Decors.animate.fadeIn(4)};
   flex-direction: column;
   height: 20vh;
   margin: 150px 320px 0px 350px;
-  
+  ${Screen.xlargeScreen`
+  margin: 100px 150px 100px 150px;
+`};
+  ${Screen.largeScreen`
+    margin: 100px 100px 100px 100px;
+  `};
   ${Screen.pad`
     margin: 100px 20px 100px 20px;
   `};
