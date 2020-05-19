@@ -13,10 +13,15 @@ const AppContainer = styled.div`
   min-height: 700px;
   flex-direction: column;
   margin: 100px 180px 30px 200px;
+  ${Screen.tablet`
+    margin: 100px 80px 100px 80px;
+  `};
+  ${Screen.miniTablet`
+    margin: 100px 50px 100px 50px;
+  `};
   ${Screen.largePhone`
     margin: 50px 10px 30px 10px;
-`};
-
+  `};
 `;
 
 const App = ({ theme, toggleTheme }) => (
