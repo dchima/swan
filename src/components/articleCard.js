@@ -57,6 +57,9 @@ const BodyText = styled.p`
   ${Screen.largePhone`
     font-size: ${Basics.fontSize.small};
   `};
+  ${Screen.smallPhone`
+    font-size: ${Basics.fontSize.xsmall};
+  `};
 `;
 
 const TitleLink = styled.a`

@@ -38,7 +38,7 @@ const basics = {
     BeVietnam: 'Be Vietnam, Lilita One, Noto Sans, Roboto, San Francisco, Helvetica Neue, Segoe UI, Arial',
   },
   fontSize: {
-    large: '50px',
+    large: '40px',
     xlarge: '85px',
     xxlarge: '100px',
     small: '15px',
