@@ -112,7 +112,7 @@ const links = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/dxnchima',
+      url: 'https://twitter.com/chimaosx',
     },
   ],
 };
