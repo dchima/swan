@@ -28,7 +28,7 @@ const App = ({ theme, toggleTheme }) => (
       <AppContainer>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Home | Chima Daniel</title>
+          <title>Chima Daniel</title>
         </Helmet>
         <GlobalStyle />
         <Hero />
