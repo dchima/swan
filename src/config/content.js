@@ -11,6 +11,6 @@ const content = {
     🌟<br/>
     Over the years, I’ve curated a collection of <a href='/bestof'>great works</a> from all across the web. These are, in my opinion, the best of the internet. I also collect <a href='https://www.notion.so/78df0ecf0cea473a84eb7f99f34c7470?v=b4a56d75a1a545b688b2ef45242d1665' target='_blank'>art.</a>
     <br /><br /> 📄🖋<br/><a href='/collection'>blog,</a> <a href='https://medium.com/@dxnchima' target='_blank'>medium,</a>
-    <a href='https://dev.to/dxnchima' target='_blank'>dev.to,</a> and <a href='https://danielchima.substack.com/' target='_blank'>substack.</a>`,
+    <a href='https://dev.to/dxnchima' target='_blank'>dev.to,</a> and <a href='https://desolationweb.substack.com/' target='_blank'>substack.</a>`,
 };
 export default content;
