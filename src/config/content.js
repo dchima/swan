@@ -2,7 +2,7 @@ const content = {
   siteUrl: 'https://template.com',
   bodyText:
     `👋🏾 <br/>I’m a Full Stack Developer, Writer and Product Designer.
-    I currently <a href='/projects'>build things</a> for the internet @ <a href='https://www.keystonebankng.com/' target='_blank'>Keystone Bank</a>.
+    I currently <a href='/projects'>build things</a> for the internet @ <a href='https://helicarrier.studio/' target='_blank'>Helicarrier</a>.
     
     I am a <a href='https://www.goodreads.com/review/list/112872457-chima-daniel' target='_blank'>bibliophile,</a> 
     <a href='https://open.spotify.com/user/xyggj57mzmnmx51g1qkit74bo?si=1kgEEoxYTneS2iLN53AVEg' target='_blank'>melophile,</a>
