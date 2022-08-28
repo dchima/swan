@@ -62,7 +62,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch(REACT_APP_API_URL, {
+    fetch(`${REACT_APP_API_URL}/graphql`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': `${REACT_APP_API_URL}` },
       body: JSON.stringify({ query }),
