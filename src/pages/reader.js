@@ -50,7 +50,7 @@ class App extends Component {
     `;
     fetch(REACT_APP_API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
       body: JSON.stringify({ query }),
     })
       .then((res) => res.json())
