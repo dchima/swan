@@ -9,7 +9,7 @@ const content = {
     <a href='https://letterboxd.com/dxnhima/films/' target='_blank'>cinephile,</a> and your everyday 
     <a href='https://myanimelist.net/animelist/dxnchima' target='_blank'>otaku.</a> <br/><br/>
     🌟<br/>
-    Over the years, I’ve curated a collection of <a href='https://dxnchima.notion.site/Chima-s-Favorite-Articles-Content-78a8cebc34204d0bb4abf198d855d300'>great works</a> from all across the web. These are, in my opinion, the best of the internet. I also collect <a href='https://www.notion.so/78df0ecf0cea473a84eb7f99f34c7470?v=b4a56d75a1a545b688b2ef45242d1665' target='_blank'>art.</a>
+    Over the years, I’ve curated a collection of <a href='https://dxnchima.notion.site/Chima-s-Favorite-Articles-Content-78a8cebc34204d0bb4abf198d855d300'>great works</a> from all across the web. These are, in my opinion, the best of the internet. I also collect <a href='https://dxnchima.notion.site/78df0ecf0cea473a84eb7f99f34c7470?v=b4a56d75a1a545b688b2ef45242d1665' target='_blank'>art.</a>
     <br /><br /> 📄🖋<br/><a href='https://medium.com/@chimaosx' target='_blank'>medium,</a>
     <a href='https://dev.to/dxnchima' target='_blank'>dev.to,</a> and <a href='https://desolationweb.substack.com/' target='_blank'>substack.</a>`,
 };
